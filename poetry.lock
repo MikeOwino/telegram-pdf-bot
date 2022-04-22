@@ -927,11 +927,11 @@ diagrams = ["jinja2", "railroad-diagrams"]
 
 [[package]]
 name = "pypdf2"
-version = "1.26.0"
-description = "PDF toolkit"
+version = "1.27.5"
+description = "A pure-python PDF library capable of splitting, merging, cropping, and transforming PDF files"
 category = "main"
 optional = false
-python-versions = "*"
+python-versions = ">=2.7"
 
 [[package]]
 name = "pyphen"
@@ -1304,7 +1304,7 @@ test = ["pytest"]
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9,<3.11"
-content-hash = "cb01350e020e55c151c0eee6dd05cb49340a3990aa59ee72adc85d4894d4d511"
+content-hash = "83e0d2c388dc784a05242af80093f0fae725f4688da78eee6fdddd8b0533dde5"
 
 [metadata.files]
 apscheduler = [
@@ -1978,6 +1978,7 @@ pdfcropmargins = [
 ]
 pikepdf = [
     {file = "pikepdf-5.0.1-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:a59414a3c13c31dc9e5fe9d27c8081281d20f6eb3e056a0bc56a92a2b71f58e3"},
+    {file = "pikepdf-5.0.1-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:a0147dd6f8bcfa7b887b61288b9a84b0907fcb8b898c6710c4ca615c77b8269d"},
     {file = "pikepdf-5.0.1-cp310-cp310-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:8d2281fde206e68d38519ec495b7515c599194cb5fb4b486099b43c8055b15e3"},
     {file = "pikepdf-5.0.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:77031dada8172c97760f51724176413d4a05e019ed5b14d16c65517c6eddd061"},
     {file = "pikepdf-5.0.1-cp310-cp310-win32.whl", hash = "sha256:6ed285cf894d26a89d705c6f6a6301d8e29d2f7109cc7e40625db1981dddc678"},
@@ -1993,6 +1994,7 @@ pikepdf = [
     {file = "pikepdf-5.0.1-cp38-cp38-win32.whl", hash = "sha256:3988dde776155cb5616bc19ee4b50b5d3f26da6289fcec450e5927c72ca8ccd6"},
     {file = "pikepdf-5.0.1-cp38-cp38-win_amd64.whl", hash = "sha256:6945fe8d62983f18393969c59098428aaf3d36e6726a2a91431bb38c7977ee06"},
     {file = "pikepdf-5.0.1-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:23c01f191d675525481c6ec2e1556ae5d8e8cdefe726677d90ff93350dac2cba"},
+    {file = "pikepdf-5.0.1-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:dbc7dee78f87c485e3bd5cfd9cc9c34e963d2765dff1a04d1a123814cdef28ab"},
     {file = "pikepdf-5.0.1-cp39-cp39-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:14cd4bbbc699377d264549c07b0f6faa3ad79bba73ee1f0331e7c52d06a0e1ef"},
     {file = "pikepdf-5.0.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:1d84f75196b37d61ea9d9b0fc2dafb37af6f34a37f07cbd69a1280e7a862176c"},
     {file = "pikepdf-5.0.1-cp39-cp39-win32.whl", hash = "sha256:a17187746419810ae587eebdd82ef90d286c8bb5377c384abe335b1ef289e32e"},
@@ -2131,7 +2133,8 @@ pyparsing = [
     {file = "pyparsing-3.0.7.tar.gz", hash = "sha256:18ee9022775d270c55187733956460083db60b37d0d0fb357445f3094eed3eea"},
 ]
 pypdf2 = [
-    {file = "PyPDF2-1.26.0.tar.gz", hash = "sha256:e28f902f2f0a1603ea95ebe21dff311ef09be3d0f0ef29a3e44a932729564385"},
+    {file = "PyPDF2-1.27.5-py3-none-any.whl", hash = "sha256:9c81fc06be50fbf2e6199e8c2eac05f3eaafae4b3905ecca41200f5b02ac43d7"},
+    {file = "PyPDF2-1.27.5.tar.gz", hash = "sha256:7c18c1d48e56547b1c33f772dc15d6adbd1f4020b62e64bb4a0bc0ee2ab94511"},
 ]
 pyphen = [
     {file = "pyphen-0.12.0-py3-none-any.whl", hash = "sha256:459020cd320eb200c0c5ba46b98b2278fd34c5546f520fdcd2ce5f8d733eb994"},

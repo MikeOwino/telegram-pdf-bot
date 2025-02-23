@@ -1,21 +1,23 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base"],
-  "labels": ["dependencies"],
-  "semanticCommits": "enabled",
-  "schedule": ["after 6pm every weekday", "every weekend"],
-  "timezone": "Australia/Sydney",
+  "extends": [
+    "github>zeshuaro/renovate-configs",
+    "github>zeshuaro/renovate-configs:app",
+    "github>zeshuaro/renovate-configs:python"
+  ],
   "packageRules": [
     {
-      "groupName": "GitHub Actions Dependencies",
-      "matchPaths": [".github/workflows/*.yml"],
-      "addLabels": ["ci"]
-    },
-    {
-      "groupName": "Python",
-      "matchPaths": [".python-version", "Dockerfile"],
-      "matchPackageNames": ["python"],
-      "semanticCommitScope": "python"
+      "groupName": "Pikepdf",
+      "matchFileNames": [
+        "pyproject.toml"
+      ],
+      "matchPackageNames": [
+        "pikepdf"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "automerge": false
     }
   ]
 }

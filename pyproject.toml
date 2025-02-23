@@ -5,56 +5,141 @@ description = "Telegram bot that can do a lot of things related to PDF files."
 authors = ["zeshuaro <zeshuaro@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = ">=3.9,<3.11"
-Babel = "2.9.1"
-Flask = "2.0.3"
-google-cloud-datastore = "2.5.0"
-gunicorn = "20.1.0"
-humanize = "4.0.0"
-img2pdf = "0.4.3"
-matplotlib = "3.5.1"
-ocrmypdf = "13.4.0"
-pdfCropMargins = "1.0.5"
-pdf2image = "1.16.0"
-"pdfminer.six" = "20211012"
-python-dotenv = "0.19.2"
-python-telegram-bot = "13.11"
-Pillow = "9.0.1"
-PyPDF2 = "1.26.0"
-requests = "2.27.1"
-slack-sdk = "3.15.2"
-weasyprint = "54.2"
-noteshrink = {git = "https://github.com/zeshuaro/noteshrink"}
-pdf-diff = {git = "https://github.com/zeshuaro/pdf-diff"}
+python = "==3.13.2"
+Babel = "2.17.0"
+google-cloud-datastore = "2.20.2"
+humanize = "4.12.1"
+img2pdf = "0.6.0"
+ocrmypdf = "16.9.0"
+pdf2image = "==1.17.0"
+"pdfminer.six" = "20240706"
+python-telegram-bot = { extras = [
+    "callback-data",
+    "rate-limiter",
+    "webhooks",
+], version = "==21.10" }
+requests = "2.32.3"
+slack-sdk = "3.34.0"
+weasyprint = "64.1"
+noteshrink = { git = "https://github.com/zeshuaro/noteshrink", rev = "a74a17f7cf3d2eae5811bf970ce88467ba37f51c" }
+pdf-diff = { git = "https://github.com/zeshuaro/pdf-diff", rev = "6fe2f136906f1ecc9777c31aa846cd6a287c74b6" }
 langdetect = "1.0.9"
-loguru = "0.6.0"
+loguru = "0.7.3"
+sentry-sdk = "2.22.0"
+dependency-injector = "4.45.0"
+pdfCropMargins = "==2.2.0"
+pycryptodome = "3.21.0"
+pydantic = { extras = ["dotenv"], version = "==2.10.6" }
+pypdf = "5.3.0"
+pikepdf = "9.5.2"
+pydantic-settings = "2.8.0"
 
-[tool.poetry.dev-dependencies]
-black = "22.1.0"
-isort = "5.10.1"
-pre-commit = "2.17.0"
-pylint = "2.12.2"
+[tool.poetry.group.dev.dependencies]
+pytest = "8.3.4"
+pytest-cov = "6.0.0"
+pre-commit = "==4.1.0"
+mypy = "1.15.0"
+types-requests = "2.32.0.20241016"
+pytest-asyncio = "0.25.3"
+ruff = "==0.9.7"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core==2.1.1"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.isort]
-profile = "black"
-multi_line_output = 3
+[tool.ruff]
+line-length = 100
+target-version = "py311"
 
-[tool.pylint.message-control]
-disable = [
-    "consider-using-f-string",
-    "consider-using-with",
-    "duplicate-code",
-    "invalid-name",
-    "missing-class-docstring",
-    "missing-function-docstring",
-    "missing-module-docstring",
-    "too-many-arguments",
-    "too-many-branches",
-    "too-many-locals",
-    "too-many-return-statements",
-    "unspecified-encoding",
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "ANN401", # DynamicallyTypedExpression
+    "COM812", # trailing-comma-missing
+    "FBT",    # flake8-boolean-trap
+    "ISC001", # flake8-implicit-str-concat (conflicts with formatter)
+    "PD",     # pandas-vet
+    "S603",   # subprocess-without-shell-equals-true
+
+    # D10* rules are all related to missing docstring
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D106",
+    "D107",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"pdf_bot/language/language_service.py" = [
+    "RUF001", # AmbiguousUnicodeCharacterString
+]
+"tests/pdf_processor/test_abstract_pdf_select_and_text_processor.py" = [
+    "SLF001", # private-member-access
+]
+"tests/pdf_processor/test_abstract_pdf_text_input_processor.py" = [
+    "SLF001", # private-member-access
+]
+"tests/**/*.py" = [
+    "S101",    # AssertUsed
+    "S105",    # HardcodedPasswordString
+    "PLR2004", # magic-value-comparison
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.mypy]
+warn_unused_configs = true
+warn_redundant_casts = true
+show_error_codes = true
+
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+
+warn_unused_ignores = true
+warn_no_return = true
+warn_return_any = true
+warn_unreachable = true
+
+plugins = ['pydantic.mypy']
+
+[[tool.mypy.overrides]]
+module = ['pdf_bot.log.*']
+ignore_errors = true
+
+[[tool.mypy.overrides]]
+module = [
+    'weasyprint.*',
+    'langdetect.*',
+    'img2pdf.*',
+    'pdf2image.*',
+    'pdf_diff.*',
+    'noteshrink.*',
+    'google.*',
+    'pdfCropMargins.*',
+]
+ignore_missing_imports = true
+
+[tool.coverage.run]
+relative_files = true
+branch = true
+source = ["pdf_bot"]
+omit = ['pdf_bot/__main__.py', 'pdf_bot/log/*', "tests/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "@abstractmethod",
 ]

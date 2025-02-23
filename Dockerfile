@@ -1,20 +1,39 @@
-FROM python:3.9.7
+FROM --platform=linux/amd64 python:3.13.2-slim AS build
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    poppler-utils libcairo2 libpango-1.0-0 libpangoft2-1.0-0 \
-    libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info ocrmypdf \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/* \
-    && curl -sSL https://install.python-poetry.org | python - --version 1.1.12
+ARG COMMIT_HASH
 
-ENV PATH="${PATH}:/root/.local/bin"
-WORKDIR /app
+WORKDIR /build
+RUN apt-get update && apt-get install -y --no-install-recommends g++ gcc git libcairo2-dev \
+    pkg-config python3-dev
 
+RUN pip install -U pip && pip install poetry
 COPY pyproject.toml poetry.lock ./
-RUN poetry config virtualenvs.create false && poetry install --no-dev --no-root --no-interaction
+
+RUN poetry config virtualenvs.in-project true \
+    && poetry install --only main --no-root --no-interaction
+ENV PATH="/build/.venv/bin:${PATH}"
 
 COPY locale locale/
-RUN pybabel compile -D pdf_bot -d locale
+RUN pybabel compile -D pdf_bot -d locale \
+    && find locale -type f -name '*.po' -delete
 
+FROM --platform=linux/amd64 python:3.13.2-slim AS deploy
+
+ARG COMMIT_HASH
+ENV SENTRY_RELEASE $COMMIT_HASH
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends ghostscript libpango-1.0-0 \
+    libpangoft2-1.0-0 ocrmypdf poppler-utils \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY --from=build /build/.venv/ /build/.venv/
+ENV PATH="/build/.venv/bin:${PATH}"
+
+COPY --from=build /build/locale /app/locale/
 COPY pdf_bot pdf_bot/
-CMD exec gunicorn --bind :$PORT --workers 1 --threads 10 --timeout 0 "pdf_bot:create_app()"
+
+CMD ["python", "-m", "pdf_bot"]

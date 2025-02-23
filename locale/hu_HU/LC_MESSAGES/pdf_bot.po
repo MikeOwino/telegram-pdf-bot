@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: telegram-pdf-bot\n"
 "Report-Msgid-Bugs-To: zeshuaro@gmail.com\n"
-"POT-Creation-Date: 2022-03-05 02:26+0000\n"
-"PO-Revision-Date: 2022-03-05 02:26\n"
+"POT-Creation-Date: 2025-02-01 20:45+0000\n"
+"PO-Revision-Date: 2025-02-01 20:45\n"
 "Last-Translator: \n"
 "Language: hu\n"
 "Language-Team: Hungarian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.17.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: telegram-pdf-bot\n"
 "X-Crowdin-Project-ID: 370289\n"
@@ -23,721 +23,679 @@ msgstr ""
 "X-Crowdin-File: pdf_bot.po\n"
 "X-Crowdin-File-ID: 88\n"
 
-#: pdf_bot/consts.py:38
+#: pdf_bot/consts.py:11
 msgid "Cancel"
 msgstr "Mégse gombra"
 
-#: pdf_bot/consts.py:39
+#: pdf_bot/consts.py:12
 msgid "Done"
 msgstr "Megtett"
 
-#: pdf_bot/consts.py:40
+#: pdf_bot/consts.py:13 pdf_bot/telegram_internal/telegram_service.py:48
 msgid "Back"
 msgstr "Vissza"
 
-#: pdf_bot/consts.py:41
-msgid "By Percentage"
-msgstr "Százalék szerint"
+#: pdf_bot/consts.py:23
+msgid "Something went wrong, start over with your file or command"
+msgstr "Hiba történt, kezdje elölről a fájlt vagy a parancsot"
 
-#: pdf_bot/consts.py:42
-msgid "By Margin Size"
-msgstr "Margó mérete szerint"
+#: pdf_bot/cli/cli_service.py:35
+msgid "Failed to complete process"
+msgstr "Nem sikerült befejezni a folyamatot"
 
-#: pdf_bot/consts.py:43
-msgid "Preview"
-msgstr "Előnézet"
-
-#: pdf_bot/consts.py:44
-msgid "Decrypt"
-msgstr "Visszafejteni"
-
-#: pdf_bot/consts.py:45
-msgid "Encrypt"
-msgstr "Titkosítani"
-
-#: pdf_bot/consts.py:46
-msgid "Extract Images"
-msgstr "Képek kibontása"
-
-#: pdf_bot/consts.py:47
-msgid "To Images"
-msgstr "Képekre"
-
-#: pdf_bot/consts.py:48
-msgid "Rotate"
-msgstr "Forgatni"
-
-#: pdf_bot/consts.py:49
-msgid "Scale"
-msgstr "Skála"
-
-#: pdf_bot/consts.py:50
-msgid "Split"
-msgstr "Split"
-
-#: pdf_bot/consts.py:51
-msgid "Beautify"
-msgstr "Szépít"
-
-#: pdf_bot/consts.py:52
-msgid "To PDF"
-msgstr "PDF-fájlba"
-
-#: pdf_bot/consts.py:53
-msgid "Rename"
-msgstr "Átnevez"
-
-#: pdf_bot/consts.py:54
-msgid "Crop"
-msgstr "Termés"
-
-#: pdf_bot/consts.py:55
-msgid "Compressed"
-msgstr "Tömörített"
-
-#: pdf_bot/consts.py:56
-msgid "Images"
-msgstr "Képek"
-
-#: pdf_bot/consts.py:57
-msgid "Remove Last File"
-msgstr "Utolsó fájl eltávolítása"
-
-#: pdf_bot/consts.py:58
-msgid "To Dimensions"
-msgstr "Dimenziókhoz"
-
-#: pdf_bot/consts.py:59
-msgid "Extract Text"
-msgstr "Szöveg kibontása"
-
-#: pdf_bot/consts.py:60
-msgid "Text Message"
-msgstr "Szöveges üzenet"
-
-#: pdf_bot/consts.py:61
-msgid "Text File"
-msgstr "Szövegfájl"
-
-#: pdf_bot/consts.py:63
-msgid "Compress"
-msgstr "Tömöríteni"
-
-#: pdf_bot/consts.py:78
-msgid "Say Thanks"
-msgstr "Mondj köszönetet"
-
-#: pdf_bot/consts.py:79
-msgid "Coffee"
-msgstr "Kávé"
-
-#: pdf_bot/consts.py:80
-msgid "Beer"
-msgstr "Sör"
-
-#: pdf_bot/consts.py:81
-msgid "Meal"
-msgstr "Étkezés"
-
-#: pdf_bot/consts.py:82
-msgid "{message} {emoji} (${value})"
-msgstr "{message} {emoji} (${value})"
-
-#: pdf_bot/dispatcher.py:114
+#: pdf_bot/command/command_service.py:38
 msgid "Welcome to PDF Bot!"
 msgstr "Üdvözöljük a PDF Bot!"
 
-#: pdf_bot/dispatcher.py:115
+#: pdf_bot/command/command_service.py:39
 msgid "Key features:"
 msgstr "Főbb jellemzők:"
 
-#: pdf_bot/dispatcher.py:116
+#: pdf_bot/command/command_service.py:41
 msgid "- Compress, merge, preview, rename, split and add watermark to PDF files"
 msgstr "- Vízjel tömörítése, összevonása, előnézete, átnevezése, felosztása és vízjel hozzáadása PDF fájlokhoz"
 
-#: pdf_bot/dispatcher.py:120
+#: pdf_bot/command/command_service.py:43
 msgid "- Create PDF files from text messages"
 msgstr "- PDF fájlok létrehozása szöveges üzenetekből"
 
-#: pdf_bot/dispatcher.py:121
+#: pdf_bot/command/command_service.py:44
 msgid "- Extract images and text from PDF files"
 msgstr "- Képek és szöveg kinyerés PDF fájlokból"
 
-#: pdf_bot/dispatcher.py:122
+#: pdf_bot/command/command_service.py:45
 msgid "- Convert PDF files into images"
 msgstr "- PDF fájlok konvertálása képekké"
 
-#: pdf_bot/dispatcher.py:123
+#: pdf_bot/command/command_service.py:46
 msgid "- Convert webpages and images into PDF files"
 msgstr "- Weboldalak és képek konvertálása PDF fájlokká"
 
-#: pdf_bot/dispatcher.py:124
+#: pdf_bot/command/command_service.py:47
 msgid "- Beautify handwritten notes images into PDF files"
 msgstr "- Szépítse a kézzel írt jegyzetek képeit PDF fájlokba"
 
-#: pdf_bot/dispatcher.py:125
+#: pdf_bot/command/command_service.py:48
 msgid "- And more..."
 msgstr "- És még sok más..."
 
-#: pdf_bot/dispatcher.py:126
+#: pdf_bot/command/command_service.py:49
+#, python-brace-format
 msgid "Type {command} to see how to use PDF Bot"
 msgstr "Írja be {command} , hogy hogyan kell használni a PDF Bot"
 
-#: pdf_bot/dispatcher.py:138
+#: pdf_bot/command/command_service.py:58
 msgid "Set Language 🌎"
 msgstr "Nyelv beállítása 🌎"
 
-#: pdf_bot/dispatcher.py:140 pdf_bot/utils.py:278
+#: pdf_bot/command/command_service.py:60
+#: pdf_bot/telegram_internal/telegram_service.py:222
 msgid "Join Channel"
 msgstr "Csatlakozás a csatornához"
 
-#: pdf_bot/dispatcher.py:141 pdf_bot/payment.py:85 pdf_bot/utils.py:279
+#: pdf_bot/command/command_service.py:61 pdf_bot/payment/payment_service.py:74
+#: pdf_bot/telegram_internal/telegram_service.py:223
 msgid "Support PDF Bot"
 msgstr "Támogatás PDF Bot"
 
-#: pdf_bot/dispatcher.py:150
+#: pdf_bot/command/command_service.py:70
 msgid "You can perform most of the tasks by sending me one of the followings:"
 msgstr "A legtöbb feladatot az alábbiak egyikének elküldésével végezheti el:"
 
-#: pdf_bot/dispatcher.py:153
+#: pdf_bot/command/command_service.py:71
 msgid "- PDF files"
 msgstr "- PDF fájlok"
 
-#: pdf_bot/dispatcher.py:154
+#: pdf_bot/command/command_service.py:72
 msgid "- Images"
 msgstr "- Képek"
 
-#: pdf_bot/dispatcher.py:155
+#: pdf_bot/command/command_service.py:73
 msgid "- Webpage links"
 msgstr "- Weboldal linkek"
 
-#: pdf_bot/dispatcher.py:156
+#: pdf_bot/command/command_service.py:74
 msgid "The rest of the tasks can be performed by using the following commands:"
 msgstr "A többi feladat a következő parancsokkal végezhető el:"
 
-#: pdf_bot/dispatcher.py:160
+#: pdf_bot/command/command_service.py:75
+#, python-brace-format
 msgid "{command} - compare PDF files"
 msgstr "{command} - PDF fájlok összehasonlítása"
 
-#: pdf_bot/dispatcher.py:161
+#: pdf_bot/command/command_service.py:76
+#, python-brace-format
 msgid "{command} - merge PDF files"
 msgstr "{command} - PDF fájlok egyesítése"
 
-#: pdf_bot/dispatcher.py:162
+#: pdf_bot/command/command_service.py:78
+#, python-brace-format
 msgid "{command} - convert and combine multiple images into PDF files"
 msgstr "{command} - több kép konvertálása és kombinálása PDF-fájlokká"
 
-#: pdf_bot/dispatcher.py:165
+#: pdf_bot/command/command_service.py:80
+#, python-brace-format
 msgid "{command} - create PDF files from text messages"
 msgstr "{command} - PDF fájlok létrehozása szöveges üzenetekből"
 
-#: pdf_bot/dispatcher.py:168
+#: pdf_bot/command/command_service.py:83
+#, python-brace-format
 msgid "{command} - add watermark to PDF files"
 msgstr "{command} - vízjel hozzáadása PDF fájlokhoz"
 
-#: pdf_bot/feedback.py:48
-msgid "Send me your feedback (only English feedback will be forwarded to my developer)"
-msgstr "Küldje el visszajelzését (csak az angol visszajelzést továbbítjuk a fejlesztőmnek)"
-
-#: pdf_bot/feedback.py:84
-msgid "Thank you for your feedback, I've already forwarded it to my developer"
-msgstr "Köszönöm a visszajelzést, már továbbítottam a fejlesztőmnek"
-
-#: pdf_bot/feedback.py:88
-msgid "The feedback is not in English, try again"
-msgstr "A visszajelzés nem angol nyelvű, próbálkozzon újra"
-
-#: pdf_bot/language.py:28
-msgid "Select your language"
-msgstr "Válassza ki a nyelvet"
-
-#: pdf_bot/language.py:70
-msgid "Your language has been set to {language}"
-msgstr "A nyelved {language}"
-
-#: pdf_bot/payment.py:58
-msgid "Help translate PDF Bot"
-msgstr "Segítség a PDF Bot fordításában"
-
-#: pdf_bot/payment.py:70
-msgid "Select how you want to support PDF Bot"
-msgstr "Válassza ki, hogyan szeretné támogatni a PDF Bot"
-
-#: pdf_bot/payment.py:86
-msgid "Say thanks to PDF Bot and help keep it running"
-msgstr "Köszönj a PDF Botnak, és segíts megőrizni a működését"
-
-#: pdf_bot/payment.py:107
-msgid "Something went wrong"
-msgstr "Valami rosszul sült el"
-
-#: pdf_bot/payment.py:115
-msgid "Thank you for your support!"
-msgstr "Köszönöm a támogatást!"
-
-#: pdf_bot/url.py:29
-msgid "Timed out processing your web page, your web page is probably too complex to process"
-msgstr "A weboldal feldolgozásának időzére időzve a weboldal valószínűleg túl bonyolult a feldolgozáshoz"
-
-#: pdf_bot/url.py:36
-msgid "You've sent me this web page already and I'm still converting it"
-msgstr "Már elküldted nekem ezt a weboldalt, és még mindig konvertálom"
-
-#: pdf_bot/url.py:39
-msgid "Converting your web page into a PDF file"
-msgstr "A weblap konvertálása PDF-fájllá"
-
-#: pdf_bot/url.py:51
-msgid "Unable to reach your web page"
-msgstr "Nem érhető el a weboldal"
-
-#: pdf_bot/utils.py:34
-msgid "Action cancelled"
-msgstr "Művelet megszakítva"
-
-#: pdf_bot/utils.py:67
-msgid "Your file is not a PDF file, please try again"
-msgstr "A fájl nem PDF-fájl, próbálkozzon újra"
-
-#: pdf_bot/commands/image.py:136 pdf_bot/commands/merge.py:120
-#: pdf_bot/utils.py:73
-msgid "Your file is too large for me to download and process"
-msgstr "A fájl túl nagy ahhoz, hogy letöltse és feldolgozza"
-
-#: pdf_bot/commands/image.py:137 pdf_bot/commands/merge.py:121
-#: pdf_bot/files/file.py:129 pdf_bot/files/image.py:48 pdf_bot/utils.py:74
-#: pdf_bot/utils.py:243
-msgid "Note that this is a Telegram Bot limitation and there's nothing I can do unless Telegram changes this limit"
-msgstr "Ne feledje, hogy ez egy Telegram Bot korlátozás, és semmit sem tehetek, ha a Telegram nem változtatja meg ezt a korlátot"
-
-#: pdf_bot/utils.py:105
-msgid "Something went wrong, please start over again"
-msgstr "Valami elromlott, kérem, kezdje újra."
-
-#: pdf_bot/utils.py:179
-msgid "Your file is invalid and I couldn't open and process it"
-msgstr "A fájl érvénytelen, és nem tudtam megnyitni és feldolgozni"
-
-#: pdf_bot/utils.py:185
-msgid "Your PDF file is already encrypted"
-msgstr "A PDF-fájl már titkosítva van"
-
-#: pdf_bot/utils.py:187 pdf_bot/utils.py:191
-msgid "Your PDF file is encrypted and you'll have to decrypt it first"
-msgstr "A PDF-fájl titkosítva van, és először vissza kell fejteniük"
-
-#: pdf_bot/utils.py:213
-msgid "You've sent me these {file_type} so far:"
-msgstr "Eddig ezeket a {file_type} küldted nekem:"
-
-#: pdf_bot/utils.py:242
-msgid "The result file is too large for me to send to you"
-msgstr "Az eredményfájl túl nagy ahhoz, hogy elküldhessem neked"
-
-#: pdf_bot/utils.py:255 pdf_bot/utils.py:262
-msgid "Here is your result file"
-msgstr "Itt van az eredményfájl"
-
-#: pdf_bot/commands/compare.py:47
+#: pdf_bot/compare/compare_service.py:41
 msgid "Send me one of the PDF files that you'll like to compare"
 msgstr "Küldje el nekem az egyik PDF-fájlt, amelyet szeretne összehasonlítani"
 
-#: pdf_bot/commands/compare.py:48
+#: pdf_bot/compare/compare_service.py:42
 msgid "Note that I can only look for text differences"
 msgstr "Ne feledje, hogy csak szövegkülönbségeket kereshetek"
 
-#: pdf_bot/commands/compare.py:82
+#: pdf_bot/compare/compare_service.py:64
 msgid "Send me the other PDF file that you'll like to compare"
 msgstr "Küldje el nekem a másik PDF fájlt, hogy tetszeni fog összehasonlítani"
 
-#: pdf_bot/commands/compare.py:106
+#: pdf_bot/compare/compare_service.py:83
 msgid "Comparing your PDF files"
 msgstr "A PDF-fájlok összehasonlítása"
 
-#: pdf_bot/commands/compare.py:125
+#: pdf_bot/compare/compare_service.py:91
 msgid "There are no text differences between your PDF files"
 msgstr "A PDF-fájlok között nincsenek szöveges különbségek"
 
-#: pdf_bot/commands/image.py:78
-msgid "Send me the images that you'll like to beautify or convert into a PDF file"
-msgstr "Küldje el nekem azokat a képeket, amelyeket meg szeretne szépíteni vagy PDF-fájllá konvertálni"
-
-#: pdf_bot/commands/image.py:82
-msgid "Note that the images will be beautified and converted in the order that you send me"
-msgstr "Ne feledje, hogy a képeket a küldés sorrendjében szépítik és konvertálják"
-
-#: pdf_bot/commands/image.py:109
-msgid "File name unavailable"
-msgstr "A fájlnév nem érhető el"
-
-#: pdf_bot/commands/image.py:128
-msgid "Your file is not an image"
-msgstr "A fájl nem kép"
-
-#: pdf_bot/commands/image.py:149
-msgid "images"
-msgstr "Képek"
-
-#: pdf_bot/commands/image.py:156
-msgid "Select the task from below if you've sent me all the images, or keep sending me the images"
-msgstr "Válassza ki a feladatot alulról, ha elküldte nekem az összes képet, vagy küldje el nekem a képeket"
-
-#: pdf_bot/commands/image.py:200
-msgid "{file_name} has been removed for beautifying or converting"
-msgstr "{file_name} szépítés vagy átalakítás miatt miatte 2018."
-
-#: pdf_bot/commands/image.py:237
-msgid "Beautifying and converting your images"
-msgstr "A képek szépítése és konvertálása"
-
-#: pdf_bot/commands/image.py:242
-msgid "Converting your images into PDF"
-msgstr "Képek konvertálása PDF formátumba"
-
-#: pdf_bot/commands/merge.py:83
-msgid "Send me the PDF files that you'll like to merge"
-msgstr "Küldje el nekem azokat a PDF-fájlokat, amelyeket egyesíteni szeretne"
-
-#: pdf_bot/commands/merge.py:84
-msgid "Note that the files will be merged in the order that you send me"
-msgstr "Vegye figyelembe, hogy a fájlok összevonásra kerülnek abban a sorrendben, amelyet ön küld nekem"
-
-#: pdf_bot/commands/merge.py:116
-msgid "Your file is not a PDF file"
-msgstr "A fájl nem PDF-fájl"
-
-#: pdf_bot/commands/merge.py:144
-msgid "PDF files"
-msgstr "PDF-fájlok"
-
-#: pdf_bot/commands/merge.py:151
-msgid "Press {done} if you've sent me all the PDF files that you'll like to merge or keep sending me the PDF files"
-msgstr "Nyomja meg a {done} , ha elküldte nekem az összes PDF-fájlt, amelyet egyesíteni szeretne, vagy továbbra is elküldi nekem a PDF-fájlokat"
-
-#: pdf_bot/commands/merge.py:194
-msgid "{file_name} has been removed for merging"
-msgstr "{file_name} eltávolították az összeolvadás miatt"
-
-#: pdf_bot/commands/merge.py:216
-msgid "You haven't sent me any PDF files"
-msgstr "Nem küldött nekem PDF-fájlt"
-
-#: pdf_bot/commands/merge.py:220
-msgid "You've only sent me one PDF file"
-msgstr "Csak egy PDF fájlt küldtél nekem."
-
-#: pdf_bot/commands/merge.py:234
-msgid "Merging your PDF files"
-msgstr "A PDF-fájlok egyesítése"
-
-#: pdf_bot/commands/merge.py:254
-msgid "I couldn't merge your PDF files as this file is invalid: {file_name}"
-msgstr "Nem tudtam egyesíteni a PDF-fájlokat, mivel ez a fájl érvénytelen: {file_name}"
-
-#: pdf_bot/commands/text.py:60
-msgid "Send me the text that you'll like to write into your PDF file"
-msgstr "Küldje el a szöveget, hogy szeretne írni a PDF-fájl"
-
-#: pdf_bot/commands/text.py:83
-msgid "Send me the font that you'll like to use for the PDF file or press {skip} to use the default font"
-msgstr "Küldje el nekem azt a betűtípust, amelyet használni szeretne a PDF-fájlhoz, vagy nyomja le a {skip} az alapértelmezett betűtípus használatához"
-
-#: pdf_bot/commands/text.py:87
-msgid "See here for the list of supported fonts: {fonts}"
-msgstr "A támogatott betűtípusok listáját itt tekintheti meg: {fonts}"
-
-#: pdf_bot/commands/text.py:120
-msgid "Unknown font, please try again"
-msgstr "Ismeretlen betűtípus, próbálkozzon újra"
-
-#: pdf_bot/commands/text.py:152
-msgid "Creating your PDF file"
-msgstr "A PDF-fájl létrehozása"
-
-#: pdf_bot/commands/watermark.py:44
-msgid "Send me the PDF file that you'll like to add a watermark"
-msgstr "Küldje el nekem a PDF fájlt, hogy szeretne hozzáadni egy vízjel"
-
-#: pdf_bot/commands/watermark.py:77
-msgid "Send me the watermark PDF file"
-msgstr "Küldje el a vízjel PDF-fájlt"
-
-#: pdf_bot/commands/watermark.py:102
-msgid "Adding the watermark onto your PDF file"
-msgstr "Vízjel hozzáadása a PDF-fájlhoz"
-
-#: pdf_bot/commands/watermark.py:115
-msgid "watermark"
-msgstr "vízjel"
-
-#: pdf_bot/files/compress.py:21
-msgid "Compressing your PDF file"
-msgstr "A PDF-fájl tömörítése"
-
-#: pdf_bot/files/compress.py:48
-msgid "File size reduced by {percent}, from {old_size} to {new_size}"
-msgstr "Fájlméret {percent}-kal csökkentve – {old_size} -ről {new_size}-re"
-
-#: pdf_bot/files/compress.py:59 pdf_bot/files/crop.py:142
-#: pdf_bot/files/image.py:208
+#: pdf_bot/error/error_handler.py:38 pdf_bot/error/error_handler.py:44
+#: pdf_bot/telegram_internal/telegram_service.py:102
+#: pdf_bot/telegram_internal/telegram_service.py:118
 msgid "Something went wrong, please try again"
 msgstr "Valami elromlott, kérem, próbálkozzon újra."
 
-#: pdf_bot/files/crop.py:32
-msgid "Select the crop type that you'll like to perform"
-msgstr "Válassza ki a végrehajtani kívánt vágástípust"
+#: pdf_bot/error/error_handler.py:58 pdf_bot/error/error_service.py:17
+msgid "The button has expired, start over with your file or command"
+msgstr "A gomb lejárt, kezdje elölről a fájllal vagy a paranccsal"
 
-#: pdf_bot/files/crop.py:48
-msgid "Send me a number between {min_percent} and {max_percent}"
-msgstr "Küldj egy számot {min_percent} és {max_percent}között."
+#: pdf_bot/error/error_handler.py:60
+msgid "The resulted image is invalid, try again"
+msgstr "A kapott kép érvénytelen, próbálkozzon újra"
 
-#: pdf_bot/files/crop.py:51
-msgid "This is the percentage of margin space to retain between the content in your PDF file and the page"
-msgstr "Ez a PDF-fájl tartalma és az oldal közötti margóterület százalékos aránya"
+#: pdf_bot/feedback/feedback_service.py:31
+msgid "Send me your feedback in English"
+msgstr "Küldje el visszajelzését angolul"
 
-#: pdf_bot/files/crop.py:63
-msgid "Send me a number that you'll like to adjust the margin size"
-msgstr "Küldjön nekem egy számot, amelyet módosítani szeretne a margó méretével"
+#: pdf_bot/feedback/feedback_service.py:54
+msgid "The feedback is not in English, try again"
+msgstr "A visszajelzés nem angol nyelvű, próbálkozzon újra"
 
-#: pdf_bot/files/crop.py:64
-msgid "Positive numbers will decrease the margin size and negative numbers will increase it"
-msgstr "A pozitív számok csökkentik a margó méretét, a negatív számok pedig növelik azt"
+#: pdf_bot/feedback/feedback_service.py:58
+msgid "Thank you for your feedback, I've forwarded it to my developer"
+msgstr "Köszönjük visszajelzését, továbbítottam a fejlesztőmnek"
 
-#: pdf_bot/files/crop.py:86
-msgid "The number must be between {min_percent} and {max_percent}, please try again"
-msgstr "A számnak {min_percent} és {max_percent}között kell lennie, kérjük, próbálja meg újra"
-
-#: pdf_bot/files/crop.py:109
-msgid "The number is invalid, please try again"
-msgstr "A szám érvénytelen, próbálkozzon újra"
-
-#: pdf_bot/files/crop.py:120
-msgid "Cropping your PDF file"
-msgstr "A PDF-fájl körülvágása"
-
-#: pdf_bot/files/crypto.py:18
-msgid "Send me the password to decrypt your PDF file"
-msgstr "Küldje el a jelszót a PDF-fájl visszafejtéséhez"
-
-#: pdf_bot/files/crypto.py:33
-msgid "Decrypting your PDF file"
-msgstr "A PDF-fájl visszafejtése"
-
-#: pdf_bot/files/crypto.py:48
-msgid "Your PDF file is invalid and I couldn't open and process it"
-msgstr "A PDF-fájl érvénytelen, és nem tudtam megnyitni és feldolgozni"
-
-#: pdf_bot/files/crypto.py:53
-msgid "Your PDF file is not encrypted"
-msgstr "A PDF-fájl nincs titkosítva"
-
-#: pdf_bot/files/crypto.py:58
-msgid "The decryption password is incorrect, please try again"
-msgstr "A visszafejtési jelszó helytelen, próbálkozzon újra"
-
-#: pdf_bot/files/crypto.py:76
-msgid "Your PDF file is encrypted with a method that I can't decrypt"
-msgstr "A PDF-fájl titkosítva van egy olyan módszerrel, amelyet nem tudok visszafejteni"
-
-#: pdf_bot/files/crypto.py:92
-msgid "Send me the password to encrypt your PDF file"
-msgstr "Küldje el a jelszót a PDF-fájl titkosításához"
-
-#: pdf_bot/files/crypto.py:106
-msgid "Encrypting your PDF file"
-msgstr "A PDF-fájl titkosítása"
-
-#: pdf_bot/files/document.py:52 pdf_bot/files/image.py:63
-msgid "Select the task that you'll like to perform"
-msgstr "Válassza ki a végrehajtani kívánt feladatot"
-
-#: pdf_bot/files/file.py:128
+#: pdf_bot/file/file_service.py:54
 msgid "Your file is too big for me to download and process"
 msgstr "A fájl túl nagy nekem, hogy töltse le és feldolgozza"
 
-#: pdf_bot/files/image.py:47
-msgid "Your image is too large for me to download and process"
-msgstr "A kép túl nagy ahhoz, hogy letöltse és feldolgozzam"
+#: pdf_bot/file/file_service.py:56
+msgid "Note that this is a Telegram Bot limitation and there's nothing I can do unless Telegram changes this limit"
+msgstr "Ne feledje, hogy ez egy Telegram Bot korlátozás, és semmit sem tehetek, ha a Telegram nem változtatja meg ezt a korlátot"
 
-#: pdf_bot/files/image.py:95
-msgid "Extracting a preview for your PDF file"
-msgstr "A PDF-fájl előnézetének kibontása"
+#: pdf_bot/file_processor/abstract_file_processor.py:105
+#: pdf_bot/file_processor/abstract_file_processor.py:163
+msgid "Processing your file"
+msgstr "A fájl feldolgozása"
 
-#: pdf_bot/files/image.py:143
-msgid "Select the result file format"
-msgstr "Az eredményfájl formátumának kiválasztása"
+#: pdf_bot/file_processor/file_task_mixin.py:69
+msgid "Select the task that you'll like to perform"
+msgstr "Válassza ki a végrehajtani kívánt feladatot"
 
-#: pdf_bot/files/image.py:155
-msgid "Converting your PDF file into images"
-msgstr "PDF-fájl átalakítása képekké"
+#: pdf_bot/image_handler/batch_image_service.py:20
+#: pdf_bot/image_processor/beautify_image_processor.py:24
+msgid "Beautify"
+msgstr "Szépít"
 
-#: pdf_bot/files/image.py:193
-msgid "Extracting all the images in your PDF file"
-msgstr "A PDF-fájl összes képének kibontása"
+#: pdf_bot/image_handler/batch_image_service.py:21
+#: pdf_bot/image_processor/image_to_pdf_processor.py:24
+msgid "To PDF"
+msgstr "PDF-fájlba"
 
-#: pdf_bot/files/image.py:213
-msgid "I couldn't find any images in your PDF file"
-msgstr "Nem találtam képeket a PDF-fájlban"
+#: pdf_bot/image_handler/batch_image_service.py:22
+#: pdf_bot/merge/merge_service.py:19
+msgid "Remove last file"
+msgstr "Az utolsó fájl eltávolítása"
 
-#: pdf_bot/files/image.py:251
-msgid "See above for all your images"
-msgstr "Lásd fent az összes képet"
+#: pdf_bot/image_handler/batch_image_service.py:42
+msgid "Send me the images that you'll like to beautify or convert into a PDF file"
+msgstr "Küldje el nekem azokat a képeket, amelyeket meg szeretne szépíteni vagy PDF-fájllá konvertálni"
 
-#: pdf_bot/files/ocr.py:21
-msgid "Adding an OCR text layer to your PDF file"
-msgstr "OCR szövegréteg hozzáadása a PDF fájlhoz"
+#: pdf_bot/image_handler/batch_image_service.py:45
+msgid "Note that the images will be beautified and converted in the order that you send me"
+msgstr "Ne feledje, hogy a képeket a küldés sorrendjében szépítik és konvertálják"
 
-#: pdf_bot/files/ocr.py:39
+#: pdf_bot/image_handler/batch_image_service.py:93
+msgid "You've sent me these images so far:"
+msgstr "Ezeket a képeket küldted nekem eddig:"
+
+#: pdf_bot/image_handler/batch_image_service.py:107
+msgid "Select the task from below if you've sent me all the images, or keep sending me the images"
+msgstr "Válassza ki a feladatot alulról, ha elküldte nekem az összes képet, vagy küldje el nekem a képeket"
+
+#: pdf_bot/image_handler/batch_image_service.py:127
+msgid "You've already removed all the images you've sent me"
+msgstr "Már eltávolítottad az összes képet, amit küldtél nekem"
+
+#: pdf_bot/image_handler/batch_image_service.py:131
+#, python-brace-format
+msgid "{file_name} has been removed"
+msgstr "{file_name} eltávolították"
+
+#: pdf_bot/image_handler/batch_image_service.py:151
+msgid "You haven't sent me any images"
+msgstr "Nem küldtél nekem képeket"
+
+#: pdf_bot/image_handler/batch_image_service.py:154
+msgid "You've only sent me one image"
+msgstr "Csak egy képet küldtél nekem"
+
+#: pdf_bot/image_handler/batch_image_service.py:171
+msgid "Beautifying and converting your images into a PDF file"
+msgstr "A képek szépítése és konvertálása PDF-fájllá"
+
+#: pdf_bot/image_handler/batch_image_service.py:173
+msgid "Converting your images into a PDF file"
+msgstr "Képek konvertálása PDF-fájllá"
+
+#: pdf_bot/language/language_service.py:87
+msgid "Select your language"
+msgstr "Válassza ki a nyelvet"
+
+#: pdf_bot/language/language_service.py:119
+#, python-brace-format
+msgid "Your language has been set to {language}"
+msgstr "A nyelved {language}"
+
+#: pdf_bot/merge/merge_service.py:38
+msgid "Send me the PDF files that you'll like to merge"
+msgstr "Küldje el nekem azokat a PDF-fájlokat, amelyeket egyesíteni szeretne"
+
+#: pdf_bot/merge/merge_service.py:39
+msgid "Note that the files will be merged in the order that you send me"
+msgstr "Vegye figyelembe, hogy a fájlok összevonásra kerülnek abban a sorrendben, amelyet ön küld nekem"
+
+#: pdf_bot/merge/merge_service.py:85
+msgid "You've sent me these PDF files so far:"
+msgstr "Eddig ezeket a PDF-fájlokat küldted nekem:"
+
+#: pdf_bot/merge/merge_service.py:99
+#, python-brace-format
+msgid "Press {done} if you've sent me all the PDF files that you'll like to merge or keep sending me the PDF files"
+msgstr "Nyomja meg a {done} , ha elküldte nekem az összes PDF-fájlt, amelyet egyesíteni szeretne, vagy továbbra is elküldi nekem a PDF-fájlokat"
+
+#: pdf_bot/merge/merge_service.py:120
+msgid "You've already removed all the PDF files you've sent me"
+msgstr "Már eltávolította az összes PDF-fájlt, amit elküldött nekem"
+
+#: pdf_bot/merge/merge_service.py:124
+#, python-brace-format
+msgid "{file_name} has been removed for merging"
+msgstr "{file_name} eltávolították az összeolvadás miatt"
+
+#: pdf_bot/merge/merge_service.py:146
+msgid "You haven't sent me any PDF files"
+msgstr "Nem küldött nekem PDF-fájlt"
+
+#: pdf_bot/merge/merge_service.py:149
+msgid "You've only sent me one PDF file"
+msgstr "Csak egy PDF fájlt küldtél nekem."
+
+#: pdf_bot/merge/merge_service.py:162
+msgid "Merging your PDF files"
+msgstr "A PDF-fájlok egyesítése"
+
+#: pdf_bot/payment/payment_service.py:26
+#, python-brace-format
+msgid "{message} {emoji} (${value})"
+msgstr "{message} {emoji} (${value})"
+
+#: pdf_bot/payment/payment_service.py:30
+msgid "Say Thanks"
+msgstr "Mondj köszönetet"
+
+#: pdf_bot/payment/payment_service.py:31
+msgid "Coffee"
+msgstr "Kávé"
+
+#: pdf_bot/payment/payment_service.py:32
+msgid "Beer"
+msgstr "Sör"
+
+#: pdf_bot/payment/payment_service.py:33
+msgid "Meal"
+msgstr "Étkezés"
+
+#: pdf_bot/payment/payment_service.py:59
+msgid "Select how you want to support PDF Bot"
+msgstr "Válassza ki, hogyan szeretné támogatni a PDF Bot"
+
+#: pdf_bot/payment/payment_service.py:75
+msgid "Say thanks to PDF Bot and help keep it running"
+msgstr "Köszönj a PDF Botnak, és segíts megőrizni a működését"
+
+#: pdf_bot/payment/payment_service.py:89
+msgid "Something went wrong, try again"
+msgstr "Hiba történt, próbálkozzon újra"
+
+#: pdf_bot/payment/payment_service.py:96
+msgid "Thank you for your support!"
+msgstr "Köszönöm a támogatást!"
+
+#: pdf_bot/payment/payment_service.py:115
+msgid "Help translate PDF Bot"
+msgstr "Segítség a PDF Bot fordításában"
+
+#: pdf_bot/pdf/exceptions.py:29
+msgid "Your PDF file is encrypted, decrypt it first then try again"
+msgstr "A PDF-fájl titkosítva van, először fejtse vissza, majd próbálja újra"
+
+#: pdf_bot/pdf/pdf_service.py:164
+msgid "Your PDF file is not encrypted"
+msgstr "A PDF-fájl nincs titkosítva"
+
+#: pdf_bot/pdf/pdf_service.py:168
+msgid "Incorrect password, please try again"
+msgstr "Helytelen jelszó, próbálkozzon újra"
+
+#: pdf_bot/pdf/pdf_service.py:171
+msgid "Your PDF file is encrypted with a method that I can't decrypt"
+msgstr "A PDF-fájl titkosítva van egy olyan módszerrel, amelyet nem tudok visszafejteni"
+
+#: pdf_bot/pdf/pdf_service.py:203
+msgid "No images found in your PDF file"
+msgstr "Nem található kép a PDF-fájlban"
+
+#: pdf_bot/pdf/pdf_service.py:215
+msgid "No text found in your PDF file"
+msgstr "A PDF-fájlban nem található szöveg"
+
+#: pdf_bot/pdf/pdf_service.py:234
+#, python-format
+msgid "I couldn't merge your PDF files as this file is invalid: %s"
+msgstr "Nem sikerült egyesíteni a PDF-fájlokat, mert ez a fájl érvénytelen: %s"
+
+#: pdf_bot/pdf/pdf_service.py:249
 msgid "Your PDF file already has a text layer"
 msgstr "A PDF-fájlnak már van szövegrétege"
 
-#: pdf_bot/files/rename.py:20
+#: pdf_bot/pdf/pdf_service.py:338
+msgid "Your PDF file is invalid"
+msgstr "A PDF-fájl érvénytelen"
+
+#: pdf_bot/pdf_processor/compress_pdf_processor.py:24
+msgid "Compress"
+msgstr "Tömöríteni"
+
+#: pdf_bot/pdf_processor/compress_pdf_processor.py:35
+#, python-brace-format
+msgid "File size reduced by {percent}, from {old_size} to {new_size}"
+msgstr "Fájlméret {percent}-kal csökkentve – {old_size} -ről {new_size}-re"
+
+#: pdf_bot/pdf_processor/crop_pdf_processor.py:17
+msgid "By percentage"
+msgstr "Százalékban"
+
+#: pdf_bot/pdf_processor/crop_pdf_processor.py:18
+msgid "To margin size"
+msgstr "A margó méretéhez"
+
+#: pdf_bot/pdf_processor/crop_pdf_processor.py:24
+msgid "Send me a number between 0 and 100\n\n"
+"This is the percentage of margin space to retain between the content in your PDF file and the page"
+msgstr "0 és 100 közötti szám küldése\n\n"
+"Ez a PDF-fájl tartalma és az oldal közötti margóterület százalékos aránya."
+
+#: pdf_bot/pdf_processor/crop_pdf_processor.py:30
+msgid "Send me a number that you'll like to adjust the margin size\n\n"
+"Positive numbers will decrease the margin size and negative numbers will increase it"
+msgstr "Küldjön nekem egy számot, amelyet módosítani szeretne a margó méretéhez\n\n"
+"A pozitív számok csökkentik a margó méretét, a negatív számok pedig növelik azt"
+
+#: pdf_bot/pdf_processor/crop_pdf_processor.py:54
+msgid "Crop"
+msgstr "Termés"
+
+#: pdf_bot/pdf_processor/crop_pdf_processor.py:58
+msgid "Select the crop type you'll like to perform"
+msgstr "Válassza ki a végrehajtani kívánt vágási típust"
+
+#: pdf_bot/pdf_processor/crop_pdf_processor.py:66
+msgid "The crop values are invalid, try again"
+msgstr "A vágási értékek érvénytelenek, próbálkozzon újra"
+
+#: pdf_bot/pdf_processor/decrypt_pdf_processor.py:33
+msgid "Decrypt"
+msgstr "Visszafejteni"
+
+#: pdf_bot/pdf_processor/decrypt_pdf_processor.py:40
+msgid "Send me the password to decrypt your PDF file"
+msgstr "Küldje el a jelszót a PDF-fájl visszafejtéséhez"
+
+#: pdf_bot/pdf_processor/encrypt_pdf_processor.py:27
+msgid "Encrypt"
+msgstr "Titkosítani"
+
+#: pdf_bot/pdf_processor/encrypt_pdf_processor.py:34
+msgid "Send me the password to encrypt your PDF file"
+msgstr "Küldje el a jelszót a PDF-fájl titkosításához"
+
+#: pdf_bot/pdf_processor/extract_pdf_image_processor.py:24
+msgid "Extract images"
+msgstr "Képek kinyerése"
+
+#: pdf_bot/pdf_processor/extract_pdf_text_processor.py:24
+msgid "Extract text"
+msgstr "Szöveg kinyerése"
+
+#: pdf_bot/pdf_processor/grayscale_pdf_processor.py:24
+msgid "Grayscale"
+msgstr "Szürkeárnyalatos"
+
+#: pdf_bot/pdf_processor/pdf_to_image_processor.py:24
+msgid "To images"
+msgstr "Tovább a képekhez"
+
+#: pdf_bot/pdf_processor/preview_pdf_processor.py:24
+msgid "Preview"
+msgstr "Előnézet"
+
+#: pdf_bot/pdf_processor/rename_pdf_processor.py:30
+msgid "Rename"
+msgstr "Átnevez"
+
+#: pdf_bot/pdf_processor/rename_pdf_processor.py:35
+#, python-format
+msgid "File names can't contain any of the following characters, please try again:\n"
+"%s"
+msgstr "A fájlnevek nem tartalmazhatják a következő karaktereket, próbálkozzon újra:\n"
+"%s"
+
+#: pdf_bot/pdf_processor/rename_pdf_processor.py:40
 msgid "Send me the file name that you'll like to rename your PDF file into"
 msgstr "Küldje el nekem azt a fájlnevet, amelyre át szeretné nevezni a PDF-fájlt"
 
-#: pdf_bot/files/rename.py:40
-msgid "File names can't contain any of the following characters:"
-msgstr "A fájlnevek nem tartalmazhatják a következő karakterek egyikét sem:"
+#: pdf_bot/pdf_processor/rotate_pdf_processor.py:37
+msgid "Rotate"
+msgstr "Forgatni"
 
-#: pdf_bot/files/rename.py:42
-msgid "Please try again"
-msgstr "Próbálkozzon újra"
-
-#: pdf_bot/files/rename.py:50
-msgid "Renaming your PDF file into {file_name}"
-msgstr "PDF-fájl átnevezése {file_name}"
-
-#: pdf_bot/files/rotate.py:25
+#: pdf_bot/pdf_processor/rotate_pdf_processor.py:75
 msgid "Select the degrees that you'll like to rotate your PDF file in clockwise"
 msgstr "Válassza ki, hogy milyen mértékben szeretné elforgatni a PDF-fájlt az óramutató járásával megegyező irányban"
 
-#: pdf_bot/files/rotate.py:51
-msgid "Rotating your PDF file clockwise by {degree} degrees"
-msgstr "A PDF-fájl óramutató járásával megegyező irányban történő elforgatása {degree} fokkal"
+#: pdf_bot/pdf_processor/scale_pdf_processor.py:18
+msgid "By factor"
+msgstr "Tényező szerint"
 
-#: pdf_bot/files/scale.py:25
-msgid "Select the scale type that you'll like to perform"
-msgstr "Válassza ki a végrehajtani kívánt léptéktípust"
+#: pdf_bot/pdf_processor/scale_pdf_processor.py:19
+msgid "To dimension"
+msgstr "Méretre"
 
-#: pdf_bot/files/scale.py:40
-msgid "Send me the width and height"
-msgstr "Küldje el nekem a szélességét és magasságát"
+#: pdf_bot/pdf_processor/scale_pdf_processor.py:25
+msgid "Send me the scaling factors for the horizontal and vertical axes\n\n"
+"Example: 2 0.5 - this will double the horizontal axis and halve the vertical axis"
+msgstr "Küldje el a vízszintes és függőleges tengelyek méretezési tényezőit\n\n"
+"Példa: 2 0,5 - ez megduplázza a vízszintes tengelyt és felére csökkenti a függőleges tengelyt"
 
-#: pdf_bot/files/scale.py:42
-msgid "This will set the width to 150 and height to 200"
-msgstr "Ez a szélességet 150-re, a magasságot pedig 200-ra"
+#: pdf_bot/pdf_processor/scale_pdf_processor.py:31
+msgid "Send me the width and height\n\n"
+"Example: 150 200 - this will set the width to 150 and height to 200"
+msgstr "Küldje el nekem a szélességet és a magasságot\n\n"
+"Példa: 150 200 - ez a szélességet 150-re, a magasságot pedig 200-ra állítja"
 
-#: pdf_bot/files/scale.py:52
-msgid "Send me the scaling factors for the horizontal and vertical axes"
-msgstr "Küldje el a vízszintes és függőleges tengelyek méretezési tényezőit"
+#: pdf_bot/pdf_processor/scale_pdf_processor.py:54
+msgid "Scale"
+msgstr "Skála"
 
-#: pdf_bot/files/scale.py:56
-msgid "This will double the horizontal axis and halve the vertical axis"
-msgstr "Ez megduplázza a vízszintes tengelyt, és felére csökkenti a függőleges tengelyt"
+#: pdf_bot/pdf_processor/scale_pdf_processor.py:58
+msgid "Select the scale type you'll like to perform"
+msgstr "Válassza ki a végrehajtani kívánt méretezési típust"
 
-#: pdf_bot/files/scale.py:79
-msgid "The scaling factors {values} are invalid, please try again"
-msgstr "A {values} skálázási tényezők érvénytelenek, próbálkozzon újra"
+#: pdf_bot/pdf_processor/scale_pdf_processor.py:66
+msgid "The scale values are invalid, try again"
+msgstr "A skálaértékek érvénytelenek, próbálkozzon újra"
 
-#: pdf_bot/files/scale.py:101
-msgid "The dimensions {values} are invalid, please try again"
-msgstr "A {values} méretek érvénytelenek, próbálkozzon újra"
+#: pdf_bot/pdf_processor/split_pdf_processor.py:29
+msgid "Split"
+msgstr "Split"
 
-#: pdf_bot/files/scale.py:115
-msgid "Scaling your PDF file, horizontally by {horizontal} and vertically by {vertical}"
-msgstr "A PDF-fájl méretezése vízszintesen {horizontal} és függőlegesen {vertical}"
+#: pdf_bot/pdf_processor/split_pdf_processor.py:33
+msgid "The split range is invalid, please try again"
+msgstr "A felosztási tartomány érvénytelen, kérjük, próbálja újra"
 
-#: pdf_bot/files/scale.py:128
-msgid "Scaling your PDF file with width of {width} and height of {height}"
-msgstr "A PDF-fájl méretezése {width} szélességével és {height}magasságával"
-
-#: pdf_bot/files/split.py:54
+#: pdf_bot/pdf_processor/split_pdf_processor.py:55
 msgid "Send me the range of pages that you'll like to keep"
 msgstr "Küldje el nekem a tartomány oldalak, hogy szeretné tartani"
 
-#: pdf_bot/files/split.py:55
+#: pdf_bot/pdf_processor/split_pdf_processor.py:56
 msgid "General usage"
 msgstr "Általános használat"
 
-#: pdf_bot/files/split.py:56
+#: pdf_bot/pdf_processor/split_pdf_processor.py:57
+#, python-brace-format
 msgid "{range}      all pages"
 msgstr "{range}      összes oldal"
 
-#: pdf_bot/files/split.py:57
+#: pdf_bot/pdf_processor/split_pdf_processor.py:58
+#, python-brace-format
 msgid "{range}      page 8 only"
 msgstr "{range}      csak a 8. oldal"
 
-#: pdf_bot/files/split.py:58
+#: pdf_bot/pdf_processor/split_pdf_processor.py:59
+#, python-brace-format
 msgid "{range}    first three pages"
 msgstr "{range}    első három oldal"
 
-#: pdf_bot/files/split.py:59
+#: pdf_bot/pdf_processor/split_pdf_processor.py:60
+#, python-brace-format
 msgid "{range}     from page 8 onward"
 msgstr "{range}     a 8. oldaltól"
 
-#: pdf_bot/files/split.py:60
+#: pdf_bot/pdf_processor/split_pdf_processor.py:61
+#, python-brace-format
 msgid "{range}     last page only"
 msgstr "csak az utolsó oldal {range}"
 
-#: pdf_bot/files/split.py:61
+#: pdf_bot/pdf_processor/split_pdf_processor.py:62
+#, python-brace-format
 msgid "{range}    all pages except the last page"
 msgstr "{range}    az utolsó oldal kivételével az összes oldalt"
 
-#: pdf_bot/files/split.py:64
+#: pdf_bot/pdf_processor/split_pdf_processor.py:63
+#, python-brace-format
 msgid "{range}     second last page only"
 msgstr "csak {range}     második utolsó oldal"
 
-#: pdf_bot/files/split.py:65
+#: pdf_bot/pdf_processor/split_pdf_processor.py:64
+#, python-brace-format
 msgid "{range}    last two pages"
 msgstr "{range}    utolsó két oldal"
 
-#: pdf_bot/files/split.py:66
+#: pdf_bot/pdf_processor/split_pdf_processor.py:65
+#, python-brace-format
 msgid "{range}  third and second last pages"
 msgstr "{range}  harmadik és második utolsó oldal"
 
-#: pdf_bot/files/split.py:67
+#: pdf_bot/pdf_processor/split_pdf_processor.py:66
 msgid "Advanced usage"
 msgstr "Speciális használat"
 
-#: pdf_bot/files/split.py:68
+#: pdf_bot/pdf_processor/split_pdf_processor.py:67
+#, python-brace-format
 msgid "{range}    pages {pages} and to the end"
 msgstr "{range}    oldalak {pages} és a végéig"
 
-#: pdf_bot/files/split.py:71
+#: pdf_bot/pdf_processor/split_pdf_processor.py:70
+#, python-brace-format
 msgid "{range} pages {pages}"
 msgstr "{range} oldalak {pages}"
 
-#: pdf_bot/files/split.py:72
+#: pdf_bot/pdf_processor/split_pdf_processor.py:71
+#, python-brace-format
 msgid "{range}   all pages in reversed order"
 msgstr "{range}   az összes oldalt fordított sorrendben"
 
-#: pdf_bot/files/split.py:73
+#: pdf_bot/pdf_processor/split_pdf_processor.py:72
+#, python-brace-format
 msgid "{range} pages {pages} except {page}"
 msgstr "{range} oldalak {pages} , kivéve {page}"
 
-#: pdf_bot/files/split.py:76
+#: pdf_bot/pdf_processor/split_pdf_processor.py:75
+#, python-brace-format
 msgid "{range}  pages {pages}"
 msgstr "{range}  oldalak {pages}"
 
-#: pdf_bot/files/split.py:100
-msgid "The range is invalid, please try again"
-msgstr "A tartomány érvénytelen, próbálkozzon újra"
+#: pdf_bot/telegram_internal/telegram_service.py:69
+msgid "Your file is too large for me to download and process, please try again with a different file\n\n"
+"Note that this limit is enforced by Telegram and there's nothing I can do unless Telegram changes it"
+msgstr "A fájl túl nagy ahhoz, hogy letöltsem és feldolgozzam, kérjük, próbálja újra egy másik fájllal\n\n"
+"Ne feledje, hogy ezt a korlátozást a Telegram érvényesíti, és semmit sem tehetek, hacsak a Telegram nem változtatja meg"
 
-#: pdf_bot/files/split.py:106
-msgid "Splitting your PDF file"
-msgstr "A PDF-fájl felosztása"
+#: pdf_bot/telegram_internal/telegram_service.py:81
+msgid "The file is too large for me to send to you\n\n"
+"Note that this limit is enforced by Telegram and there's nothing I can do unless Telegram changes it"
+msgstr "A fájl túl nagy ahhoz, hogy elküldjem Önnek\n\n"
+"Vegye figyelembe, hogy ezt a korlátot a Telegram érvényesíti, és semmit sem tehetek, hacsak a Telegram nem változtatja meg"
 
-#: pdf_bot/files/text.py:23
-msgid "Select how you'll like me to send the text to you"
-msgstr "Válassza ki, hogy tetszik nekem, hogyan küldöm el a szöveget Önnek"
+#: pdf_bot/telegram_internal/telegram_service.py:156
+msgid "Your file is not an image, please try again"
+msgstr "A fájl nem kép, kérjük, próbálja újra"
 
-#: pdf_bot/files/text.py:36
-msgid "Extracting text from your PDF file"
-msgstr "Szöveg kibontása a PDF-fájlból"
+#: pdf_bot/telegram_internal/telegram_service.py:162
+msgid "No image found in your message"
+msgstr "Nem található kép az üzenetben"
 
-#: pdf_bot/files/text.py:89
-msgid "I couldn't find any text in your PDF file"
-msgstr "Nem találtam szöveget a PDF-fájlban"
+#: pdf_bot/telegram_internal/telegram_service.py:172
+msgid "Your file is not a PDF file, please try again"
+msgstr "A fájl nem PDF-fájl, próbálkozzon újra"
+
+#: pdf_bot/telegram_internal/telegram_service.py:197
+#: pdf_bot/telegram_internal/telegram_service.py:200
+msgid "Action cancelled"
+msgstr "Művelet megszakítva"
+
+#: pdf_bot/telegram_internal/telegram_service.py:271
+#: pdf_bot/telegram_internal/telegram_service.py:279
+msgid "Here is your result file"
+msgstr "Itt van az eredményfájl"
+
+#: pdf_bot/text/text_service.py:21
+msgid "Skip"
+msgstr "Átugrik"
+
+#: pdf_bot/text/text_service.py:40
+msgid "Send me the text that you'll like to write into your PDF file"
+msgstr "Küldje el a szöveget, hogy szeretne írni a PDF-fájl"
+
+#: pdf_bot/text/text_service.py:59
+#, python-brace-format
+msgid "Send me the font that you'll like to use for the PDF file or press {skip} to use the default font"
+msgstr "Küldje el nekem azt a betűtípust, amelyet használni szeretne a PDF-fájlhoz, vagy nyomja le a {skip} az alapértelmezett betűtípus használatához"
+
+#: pdf_bot/text/text_service.py:62
+#, python-brace-format
+msgid "See here for the list of supported fonts: {fonts}"
+msgstr "A támogatott betűtípusok listáját itt tekintheti meg: {fonts}"
+
+#: pdf_bot/text/text_service.py:90
+msgid "Unknown font, please try again"
+msgstr "Ismeretlen betűtípus, próbálkozzon újra"
+
+#: pdf_bot/text/text_service.py:108
+msgid "Creating your PDF file"
+msgstr "A PDF-fájl létrehozása"
+
+#: pdf_bot/watermark/watermark_service.py:38
+msgid "Send me the PDF file that you'll like to add a watermark"
+msgstr "Küldje el nekem a PDF fájlt, hogy szeretne hozzáadni egy vízjel"
+
+#: pdf_bot/watermark/watermark_service.py:56
+msgid "Send me the watermark PDF file"
+msgstr "Küldje el a vízjel PDF-fájlt"
+
+#: pdf_bot/watermark/watermark_service.py:74
+msgid "Adding the watermark onto your PDF file"
+msgstr "Vízjel hozzáadása a PDF-fájlhoz"
+
+#: pdf_bot/webpage/webpage_service.py:41
+msgid "You've sent me this webpage already and I'm still converting it"
+msgstr "Már elküldted nekem ezt a weboldalt, és még mindig konvertálom"
+
+#: pdf_bot/webpage/webpage_service.py:45
+msgid "Converting your webpage into a PDF file"
+msgstr "A weboldal konvertálása PDF-fájllá"
+
+#: pdf_bot/webpage/webpage_service.py:72
+msgid "Unable to reach your webpage"
+msgstr "Nem lehet elérni a weboldalát"
+
+#: pdf_bot/webpage/webpage_service.py:84
+msgid "Failed to convert your webpage"
+msgstr "Nem sikerült konvertálni a weboldalt"
 
 #~ msgid ""
 #~ "Send me the first photo that "
@@ -1448,5 +1406,339 @@ msgstr "Nem találtam szöveget a PDF-fájlban"
 #~ "Your {file_type} PDF file is encrypted"
 #~ " and you'll have to decrypt it "
 #~ "first"
+#~ msgstr ""
+
+#~ msgid "watermark"
+#~ msgstr ""
+
+#~ msgid "PDF files"
+#~ msgstr ""
+
+#~ msgid "Your file is not a PDF file"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Your file is not a PDF file, "
+#~ "please try again and ensure that "
+#~ "your file has the .pdf extension"
+#~ msgstr ""
+
+#~ msgid "Converting your PDF file to black and white"
+#~ msgstr ""
+
+#~ msgid "Compressing your PDF file"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The number must be between {min_percent}"
+#~ " and {max_percent}, please try again"
+#~ msgstr ""
+
+#~ msgid "The number is invalid, please try again"
+#~ msgstr ""
+
+#~ msgid "Cropping your PDF file"
+#~ msgstr ""
+
+#~ msgid "Decrypting your PDF file"
+#~ msgstr ""
+
+#~ msgid "Your PDF file is invalid and I couldn't open and process it"
+#~ msgstr ""
+
+#~ msgid "The decryption password is incorrect, please try again"
+#~ msgstr ""
+
+#~ msgid "Encrypting your PDF file"
+#~ msgstr ""
+
+#~ msgid "Adding an OCR text layer to your PDF file"
+#~ msgstr ""
+
+#~ msgid "Renaming your PDF file into {file_name}"
+#~ msgstr ""
+
+#~ msgid "Rotating your PDF file clockwise by {degree} degrees"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Scaling your PDF file, horizontally by"
+#~ " {horizontal} and vertically by {vertical}"
+#~ msgstr ""
+
+#~ msgid "Scaling your PDF file with width of {width} and height of {height}"
+#~ msgstr ""
+
+#~ msgid "Splitting your PDF file"
+#~ msgstr ""
+
+#~ msgid "Select how you'll like me to send the text to you"
+#~ msgstr ""
+
+#~ msgid "Extracting text from your PDF file"
+#~ msgstr ""
+
+#~ msgid "I couldn't find any text in your PDF file"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Your image is too large for me "
+#~ "to download and process, please try "
+#~ "again with a differnt image\n"
+#~ "\n"
+#~ "Note that this is a Telegram Bot"
+#~ " limitation and there's nothing I can"
+#~ " do unless Telegram changes this "
+#~ "limit"
+#~ msgstr ""
+
+#~ msgid "Testing"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Your file is too large for me "
+#~ "to download and process, please try "
+#~ "again with a differnt file\n"
+#~ "\n"
+#~ "Note that this is a Telegram Bot"
+#~ " limitation and there's nothing I can"
+#~ " do unless Telegram changes this "
+#~ "limit"
+#~ msgstr ""
+
+#~ msgid "Remove Last File"
+#~ msgstr ""
+
+#~ msgid "Extracting a preview for your PDF file"
+#~ msgstr ""
+
+#~ msgid "Converting your PDF file into images"
+#~ msgstr ""
+
+#~ msgid "Select the result file format"
+#~ msgstr ""
+
+#~ msgid "Extracting all the images in your PDF file"
+#~ msgstr ""
+
+#~ msgid "I couldn't find any images in your PDF file"
+#~ msgstr ""
+
+#~ msgid "See above for all your images"
+#~ msgstr ""
+
+#~ msgid "Your image is too large for me to download and process"
+#~ msgstr ""
+
+#~ msgid "File name unavailable"
+#~ msgstr ""
+
+#~ msgid "Your file is not an image"
+#~ msgstr ""
+
+#~ msgid "Your file is too large for me to download and process"
+#~ msgstr ""
+
+#~ msgid "images"
+#~ msgstr ""
+
+#~ msgid "{file_name} has been removed for beautifying or converting"
+#~ msgstr ""
+
+#~ msgid "Beautifying and converting your images"
+#~ msgstr ""
+
+#~ msgid "Converting your images into PDF"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Send me your feedback (only English "
+#~ "feedback will be forwarded to my "
+#~ "developer)"
+#~ msgstr ""
+
+#~ msgid "Thank you for your feedback, I've already forwarded it to my developer"
+#~ msgstr ""
+
+#~ msgid "Something went wrong"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Timed out processing your web page, "
+#~ "your web page is probably too "
+#~ "complex to process"
+#~ msgstr ""
+
+#~ msgid "Something went wrong, please start over again"
+#~ msgstr ""
+
+#~ msgid "Your file is invalid and I couldn't open and process it"
+#~ msgstr ""
+
+#~ msgid "Your PDF file is already encrypted"
+#~ msgstr ""
+
+#~ msgid "Your PDF file is encrypted and you'll have to decrypt it first"
+#~ msgstr ""
+
+#~ msgid "You've sent me these {file_type} so far:"
+#~ msgstr ""
+
+#~ msgid "The result file is too large for me to send to you"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The button has expired, please try "
+#~ "again with a new message/query then "
+#~ "press the new button"
+#~ msgstr ""
+
+#~ msgid "Invalid rotation degree, try again"
+#~ msgstr ""
+
+#~ msgid "The scaling factors {values} are invalid, please try again"
+#~ msgstr ""
+
+#~ msgid "The dimensions {values} are invalid, please try again"
+#~ msgstr ""
+
+#~ msgid "Send me the scaling factors for the horizontal and vertical axes"
+#~ msgstr ""
+
+#~ msgid "This will double the horizontal axis and halve the vertical axis"
+#~ msgstr ""
+
+#~ msgid "Send me the width and height"
+#~ msgstr ""
+
+#~ msgid "This will set the width to 150 and height to 200"
+#~ msgstr ""
+
+#~ msgid "File names can't contain any of the following characters:"
+#~ msgstr ""
+
+#~ msgid "Please try again"
+#~ msgstr ""
+
+#~ msgid "The range is invalid, please try again"
+#~ msgstr ""
+
+#~ msgid "By scaling factor"
+#~ msgstr ""
+
+#~ msgid "Select the scale type that you'll like to perform"
+#~ msgstr ""
+
+#~ msgid "The values {values} are invalid, please try again"
+#~ msgstr ""
+
+#~ msgid "By margin size"
+#~ msgstr ""
+
+#~ msgid "Select the crop type that you'll like to perform"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The number {number} is not between "
+#~ "{min_percent} and {max_percent}, please try"
+#~ " again"
+#~ msgstr ""
+
+#~ msgid "The number {number} is invalid, please try again"
+#~ msgstr ""
+
+#~ msgid "Send me a number between {min_percent} and {max_percent}"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This is the percentage of margin "
+#~ "space to retain between the content "
+#~ "in your PDF file and the page"
+#~ msgstr ""
+
+#~ msgid "Send me a number that you'll like to adjust the margin size"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Positive numbers will decrease the "
+#~ "margin size and negative numbers will"
+#~ " increase it"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Select the task that you'll like "
+#~ "to perform from below or select "
+#~ "from the buttons"
+#~ msgstr ""
+
+#~ msgid "By Percentage"
+#~ msgstr ""
+
+#~ msgid "By Margin Size"
+#~ msgstr ""
+
+#~ msgid "Extract Images"
+#~ msgstr ""
+
+#~ msgid "To Images"
+#~ msgstr ""
+
+#~ msgid "Compressed"
+#~ msgstr ""
+
+#~ msgid "Images"
+#~ msgstr ""
+
+#~ msgid "To Dimensions"
+#~ msgstr ""
+
+#~ msgid "Extract Text"
+#~ msgstr ""
+
+#~ msgid "Text Message"
+#~ msgstr ""
+
+#~ msgid "Text File"
+#~ msgstr ""
+
+#~ msgid "Black & White"
+#~ msgstr ""
+
+#~ msgid "You've sent me this web page already and I'm still converting it"
+#~ msgstr ""
+
+#~ msgid "Converting your web page into a PDF file"
+#~ msgstr ""
+
+#~ msgid "Unable to reach your web page"
+#~ msgstr ""
+
+#~ msgid "Failed to convert your web page"
+#~ msgstr ""
+
+#~ msgid "Something went wrong, start over with your file or command"
+#~ msgstr ""
+
+#~ msgid "Your PDF file is encrypted"
+#~ msgstr ""
+
+#~ msgid "I couldn't merge your PDF files as this file is invalid: {file_name}"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "File names can't contain any of "
+#~ "the following characters, please try "
+#~ "again:\n"
+#~ "{invalid_chars}"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Your file is too large for me "
+#~ "to download and process, please try "
+#~ "again with a differnt file\n"
+#~ "\n"
+#~ "Note that this limit is enforced "
+#~ "by Telegram and there's nothing I "
+#~ "can do unless Telegram changes it"
 #~ msgstr ""
 
